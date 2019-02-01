@@ -1,0 +1,29 @@
+{
+	"manifest": {
+		"publishingInformation": {
+			"locales": {
+				"en-US": {
+					"summary": "Sample Short Description",
+					"examplePhrases": [
+						"Alexa open hello world"
+					],
+					"name": "Today-in-History",
+					"description": "Sample Full Description"
+				}
+			},
+			"isAvailableWorldwide": true,
+			"testingInstructions": "Sample Testing Instructions.",
+			"category": "EDUCATION_AND_REFERENCE",
+			"distributionCountries": []
+		},
+		"apis": {
+			"custom": {
+				"endpoint": {
+					"sslCertificateType": "Wildcard",
+					"uri": "https://webhook.jovo.cloud/851b966a-dc76-47c2-8d55-87148be31184"
+				}
+			}
+		},
+		"manifestVersion": "1.0"
+	}
+}

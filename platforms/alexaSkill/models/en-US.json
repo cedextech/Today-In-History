@@ -1,0 +1,43 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "today in history",
+			"types": [],
+			"intents": [
+				{
+					"name": "TellEvent",
+					"samples": [
+						"yes",
+						"next event",
+						"next",
+						"tell me what happened today",
+						"what happened today",
+						"give me an event that happened today in history"
+					]
+				},
+				{
+					"name": "StopIntent",
+					"samples": [
+						"no",
+						"stop",
+						"no thanks",
+						"not today",
+						"nope"
+					]
+				},
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				}
+			]
+		}
+	}
+}

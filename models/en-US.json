@@ -1,0 +1,66 @@
+{
+	"invocation": "today in history",
+	"intents": [
+		{
+			"name": "TellEvent",
+			"phrases": [
+				"yes",
+				"next event",
+				"next",
+				"tell me what happened today",
+				"what happened today",
+				"give me an event that happened today in history"
+			]
+		},
+		{
+			"name": "StopIntent",
+			"phrases": [
+				"no",
+				"stop",
+				"no thanks",
+				"not today",
+				"nope"
+			]
+		}
+	],
+	"alexa": {
+		"interactionModel": {
+			"languageModel": {
+				"intents": [
+					{
+						"name": "AMAZON.CancelIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.HelpIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.StopIntent",
+						"samples": []
+					}
+				]
+			}
+		}
+	},
+	"dialogflow": {
+		"intents": [
+			{
+				"name": "Default Fallback Intent",
+				"auto": true,
+				"webhookUsed": true,
+				"fallbackIntent": true
+			},
+			{
+				"name": "Default Welcome Intent",
+				"auto": true,
+				"webhookUsed": true,
+				"events": [
+					{
+						"name": "WELCOME"
+					}
+				]
+			}
+		]
+	}
+}
